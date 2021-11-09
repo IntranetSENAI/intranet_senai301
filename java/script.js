@@ -27,6 +27,16 @@ $(document).ready(function() {
            event.stopPropagation();
        });
    });
+   
+   $(document).ready(function() {
+    var botao = $('.bt20');
+    var dropDown = $('.ul20');    
+   
+       botao.on('click', function(event){
+           dropDown.stop(true,true).slideToggle();
+           event.stopPropagation();
+       });
+   });
 
    $(document).ready(function() {
     var botao = $('.bt3_1');
