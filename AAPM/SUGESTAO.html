@@ -16,13 +16,60 @@
             @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+           
+         
+::selection{
+  color: #fff;
+  background: #4671EA;
+}
+.wrapper{
+  width: 470px;
+  background: snow;
+  border-radius: 5px;
+  padding: 25px 25px 30px;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.06);
+  
+}
+.wrapper h2{
+  color: rgb(117, 5, 5);
+  font-size: 28px;
+  text-align: center;
+}
+.wrapper textarea{
+  width: 450px;
+  resize: none;
+  height: 899px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 530px;
+  caret-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  background: #ffffff;
+}
+textarea::placeholder{
+  color: #b3b3b3;
+}
+textarea:is(:focus, :valid){
+  padding: 14px;
+  border: 2px solid #000000;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+
+
+
             *{
             list-style: none;
             text-decoration: none;
         }
 
             #popup{
-            background-color: white;
+              background: linear-gradient(rgb(117, 5, 5), rgb(0, 0, 0));
             width: 650px;
             height: 800px;
             position: fixed;
@@ -33,12 +80,14 @@
             font-family: 'Poppins', sans-serif;
             border-radius: 5%;
             text-align: center;
-            box-shadow: -30px -30px 20px black;
+            z-index: 10;
             top: 50%;
             transform: translate(-50%,-50%);
             
         }
-
+        .destino{
+          overflow: visible;
+        }
        
 
         
@@ -78,7 +127,7 @@
 
         .close:hover{
             border-radius: 30px;
-            background: rgb(187, 187, 187);
+            background: rgb(196, 54, 54);
             transition: 0.5s;
         }
 
@@ -158,36 +207,37 @@
 
           <p id="title_m">Sugira algo ou faça uma crítica aqui!<span style="position: relative; left: 700px; font-size: 20px;"> </span></p>
 
-          <br>  
-          <br>  
-          <br>  
 
 
 
 
 
-
-            
-       
-
-
-
-
+        <br>
+        <br>
+        <br>
           <div class="container">
 
+            
+            <div class="destino">
 
             
-        <a href="javascript:;" onclick="abrir('popup')"><h2>Abrir</h2></a>
+              <img src="https://images.unsplash.com/photo-1503980599186-9cc36eda351a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=822&q=80">
+              <a href="javascript:;" onclick="abrir('popup')"><h2 style="text-align:center; font-family:Poppins; ">Faça o comentário clicando aqui!</h2></a>
+          </div>
+             
+                 
+           
+          
 
-        <div id="popup">
+          <div id="popup">
             <a href="javascript:;" onclick="fechar('popup')"><img src="img/close.png" class="close"></a>
-
-            <h3>Reclamação/Sugestão</h3>
-
-            <textarea cols="80" rows="10"></textarea><br>
-
-            <button class="Enviar" style="width:90px; height: 40px;">Enviar</button>
-        </div>
+  
+            <div class="wrapper">
+              <h2>Reclamação/Sugestão</h2>
+              <textarea spellcheck="false" placeholder="Digite..." required></textarea>
+              <button>Enviar</button>
+            </div>
+          </div>
  
             
            
@@ -206,7 +256,7 @@
 
           <div class="recados">
             
-        
+            <p id="title_m">OBSERVAÇÃO<span style="position: relative; left: 700px; font-size: 20px;"> </span></p>
 
             <div class="post">
               <p>Lorem ipsum</p> <!-- TÍTULO DO RECADO -->
@@ -278,15 +328,19 @@
 
 
         function abrir(id){
-            document.getElementById(id).style.display = "block";
-            
-            
-            
+          document.getElementById(id).style.display = "block";
+          document.querySelector('main').style.filter='blur(10px)';
+          document.querySelector('#title_m').style.filter='blur(10px)';
+          document.querySelector('.recados').style.filter='blur(10px)';
+          document.querySelector('.destino').style.filter='blur(10px)';
         }
 
         function fechar(id){
             document.getElementById(id).style.display = "none";
-            
+            document.querySelector('main').style.filter='blur(0px)';
+          document.querySelector('#title_m').style.filter='blur(0px)';
+          document.querySelector('.recados').style.filter='blur(0px)';
+          document.querySelector('.destino').style.filter='blur(0px)';
         }
 
 
