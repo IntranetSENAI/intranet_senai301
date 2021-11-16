@@ -19,6 +19,16 @@ $(document).ready(function() {
    });
 
    $(document).ready(function() {
+    var botao = $('.bt21');
+    var dropDown = $('.ul21');    
+   
+       botao.on('click', function(event){
+           dropDown.stop(true,true).slideToggle();
+           event.stopPropagation();
+       });
+   });
+
+   $(document).ready(function() {
     var botao = $('.bt3');
     var dropDown = $('.ul3');    
    

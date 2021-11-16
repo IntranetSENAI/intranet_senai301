@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AAPM | Produtos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="shortcut icon" href="img/icon.png">
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="jquery-3.5.1.min.js"></script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        </style>
+    </head>
+
+    <body class="fadeIn">
+
+        <nav id="n0">
+
+          <div class="close">
+            <a class="fechar" onclick="fecharNav()">&times;</a>
+          </div>
+
+            <p id="titulo">SENAI Félix Guisard</p>
+
+            <ul>
+                
+              <li class="bt1"><a href="#"><i class="fas fa-coins"></i> Compras <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul class="ul1">
+                <li class="sfirst"><a href="doc/Modelo_Contas.pdf" target="_blank">Classificação da Conta Contábil-Despesas</a></li>
+                <li><a href="doc/Modelo_Contas.pdf" target="_blank">Plano de Contas e Centro de Custos CFP 3.01</a></li>
+               </ul>
+              </li>
+
+              <li><a href="Construção.html" target="_self"><i class="fas fa-file-signature"></i> Formulários</a></li>
+
+              <li class="bt3"><a  href="#"><i class="fas fa-table"></i> Horário Escolar <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul3">
+                <li class="sfirst"><a class="bt3_1" href="#">Aprendizagem <i id="arrow" class="fas fa-caret-right"></i></a>
+                 <ul class="ul3_1">
+                  <li class="sfirst"><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">1º Semestre</a></li>
+                  <li><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">2º Semestre</a></li>
+                 </ul>
+                </li>
+                <li><a class="bt3_2" href="#">Técnico <i id="arrow" class="fas fa-caret-right"></i></a>
+                 <ul class="ul3_2">
+                  <li class="sfirst"><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">1º Semestre</a></li>
+                  <li><a href="doc/Modelo_Aprendizagem.pdf">2º Semestre</a></li>
+                 </ul>
+             </li>
+                <li><a class="ajxsub" href="doc/Modelo_Aprendizagem.pdf">Faculdade</a></li>
+               </ul>
+              
+              </li>
+              
+              <li class="bt4"><a href="#"><i class="fas fa-table"></i> Calendário Escolar <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul4">
+                <li class="sfirst"><a href="doc/Calendario_1.pdf" target="_blank">1º Semestre</a></li>
+                <li><a href="doc/Calendario_2.pdf" target="_blank">2º Semestre</a></li>
+               </ul>
+              </li>
+
+              <li class="bt6"><a href="#"><i class="fas fa-file-alt"></i> Proposta Pedagógica <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul6">
+                <li class="sfirst"><a href="doc/Modelo_PropostaPed.pdf" target="_blank">Proposta Pedagógica</a></li>
+               </ul>
+              </li>
+
+              <li><a href="doc/Modelo_PlanoEsc.pdf" target="_blank"><i class="fas fa-file-alt"></i> Plano Escolar</a></li>
+
+              <li><a href="Construção.html" target="_self"><i class="fas fa-bullhorn"></i> Reclamações</a></li>
+
+              <li class="bt10"><a href="#"><i class="fas fa-file-alt"></i> Matriz de Responsabilidade <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul10">
+                <li class="sfirst"><a href="doc/Matriz_Resp.pdf" target="_blank">Matriz de Responsabilidade</a></li>
+                <li><a href="doc/Modelo_ComiteQua.pdf" target="_blank">Comitê da Qualidade</a></li>
+               </ul>
+              </li>
+
+              <li><a href="doc/Modelo_ManualAluno.pdf" target="_blank"><i class="fas fa-graduation-cap"></i> Manual do Aluno</a></li>
+              
+              <li><a href="doc/Slide_Intranet.pdf" target="_blank"><i class="fas fa-network-wired"></i> Intranet SENAI-SP</a></li>
+
+              <li class="bt2"><a href="#"><i class="fas fa-user-shield"></i> Segurança <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul2">
+
+                      <li class="tfirst" style="position: static;"><a href="doc/Modelo_GestaoAmb.pdf" target="_blank"><i class="fas fa-leaf"></i> Significância Ambiental</a></li>
+              
+              <li><a class="bt12" href="#"><i class="fas fa-file-medical-alt"></i> Saúde e Segurança <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul12">
+                <li class="sfirst"><a href="doc/Modelo_PPRA.pdf" target="_blank">PPRA</a></li>
+                <li><a href="doc/Modelo_EPI.pdf" target="_blank">Apresentação de EPI</a></li>
+                <li><a href="doc/Modelo_EPI.pdf" target="_blank">Especificação de EPI</a></li>
+                <li><a href="doc/Modelo_CAT.pdf" target="_blank">CAT</a></li>
+                </ul>
+              
+              </li>
+              
+              <li><a href="http://intranetdownloads.sesisenaisp.org.br/SitePages/Default.aspx?RootFolder=%2FDownload%2FAssessoria%20de%20Planejamento%20e%20Gest%C3%A3o%20da%20Qualidade%2FGer%C3%AAncia%20de%20Gest%C3%A3o%20da%20Qualidade%20-%20GGQ%2FSENAI%20-%20Requisitos%20Legais&amp;FolderCTID=0x012000D74A27056DF83A47B375C321A275AC59&amp;View={F552DD1E-4564-4B5B-BACA-F2DB9EC4BF24}" target="_self"><i class="fas fa-file-alt"></i> Plan. Situação Legal</a></li>
+              
+              <li><a class="bt13" href="#"><i class="fas fa-running"></i> P A E <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul13">
+                <li class="sfirst"><a class="bt13_1" href="#">Plano de Atendimento Emergêncial <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul13_1">
+                    <li class="sfirst"><a href="doc/Modelo_PAE.pdf" target="_blank">PAE</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Acetileno Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Acetileno Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Argônio Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - GLP Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - GLP Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Dielétrico Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Dielétrico Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lâmpada Quebrada</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lubrificante Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lubrificante Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Oxigênio Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Refrigerante Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Refrigerante Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Toalhas contaminadas</a></li>
+                    </ul>
+                  </li>
+                <li><a href="doc/Modelo_PlanoEmer.pdf" target="_blank">Relatório de Atendimento Emergêncial</a></li>
+                <li><a href="doc/Modelo_Simulado.pdf" target="_blank">Cronograma de Simulados</a></li>
+                <li><a href="doc/Modelo_Criterios.pdf" target="_blank">Critérios de Avaliação do Simulado</a></li>
+                <li><a href="doc/Modelo_PlanoEmer.pdf" target="_blank">Classsificação de Emergência</a></li>
+                <li><a href="doc/Modelo_Criterios.pdf" target="_blank">Relatório de Avaliação de Simulados</a></li>
+                <li><a href="doc/Modelo_Intervencao.pdf" target="_blank">Plano de Intervenção de Incêndio</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt14" href="#"><i class="fas fa-leaf"></i> Metas Ambientais <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul class="ul14">
+                <li class="sfirst"><a href="doc/Modelo_GestaoAmb.pdf" target="_blank">Caderno de Programas Ambientais</a></li>
+                <li><a href="doc/Modelo_Metas.pdf" target="_blank">Metas</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt15" href="#"><i class="fas fa-file-alt"></i> Certificados / Licenças <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul15">
+                <li class="sfirst"><a class="bt15_1" href="#">AVCB <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul15_1">
+                    <li class="sfirst"><a href="#">Em Analise C. B.</a></li>
+                    </ul>
+                  </li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Licença de Operação</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Brigada de Incêndio</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Habite-se do Prédio</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Álvara de Funcionamento</a></li>
+                <li><a href="Construção.html">Certificado de Detetização</a></li>
+                <li><a href="doc/Modelo_PAE.pdf">Laudo de Potabilidade da Água</a></li>
+                <li><a class="bt15_2" href="#">Laudo de Estanqueidade <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul15_2">
+                    <li class="sfirst"><a href="doc/Modelo_PAE.pdf" target="_blank">Mangueiras de Incêndio</a></li>
+                    </ul>
+                  </li>
+                <li><a href="Construção.html">Analise de Solo</a></li>
+                <li><a href="Construção.html">Vistoria Vigilância Sanitáo</a></li>
+                <li><a href="doc/Modelo_Cadri.pdf" target="_blank">CADRI</a></li>
+                <li><a href="doc/Modelo_Cadri.pdf" target="_blank">CADRI - Lâmpadas</a></li>
+                <li><a href="Construção.html">PCMSO</a></li>
+                <li><a href="Construção.html">Prova Descargas Elétricas</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt16" href="#"><i class="fas fa-hard-hat"></i> Procedimentos Operacionais <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul class="ul16">
+                <li class="sfirst"><a href="doc/Modelo_SO.pdf" target="_blank">Óleos Industriais</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Toalhas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Lâmpadas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Coleta Seletiva</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Óleos Comestiveis</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Pilhas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Materiais</a></li>
+                </ul>
+              </li>
+
+              <li class="tfirst" style="position: static;"><a class="bt17" href="#"><i class="fas fa-hard-hat"></i> CIPA <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul17">
+                      <li class="sfirst"><a class="bt17_1" href="#">Comissão <i id="arrow" class="fas fa-caret-right"></i></a>
+                          <ul class="ul17_1">
+                              <li class="sfirst"><a href="doc/Modelo_AtaPosse.pdf" target="_blank">Ata de Posse</a></li>
+                              <li><a href="doc/Modelo_AtaPosse.pdf target="_blank">Processo Eleitoral</a></li>
+                          </ul>
+                      </li>
+                    <li><a href="Construção.html" target="_self">Acidentes</a></li>
+                    <li><a href="doc/Modelo_Cronograma.pdf" target="_blank">Cronograma</a></li>
+                    <li><a href="doc/Modelo_Cronograma.pdf" target="_blank">Plano de Trabalho</a></li>
+                   </ul>
+              </li>
+
+                  </ul>
+              </li>
+
+              <li class="bt5"><a href="#"><i class="fas fa-graduation-cap"></i> Superior <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul5">
+
+                      <li><a class="bt19" href="#"><i class="fas fa-file-alt"></i> Estágio <i id="arrow" class="fas fa-caret-right"></i></a>
+                          <ul class="ul19">
+                            <li class="sfirst"><a href="doc/Modelo_ManualAluno.pdf" target="_blank">Manual</a></li>
+                            <li><a href="doc/Modelo_ManualAluno.pdf">Lei do Estágio</a></li>
+                          </ul>
+                      </li>
+
+                      <li><a href="#" target="_self"><i class="fas fa-hands-helping"></i> Secretaria</a></li>
+
+                      <li><a href="Construção.html" target="_self"><i class="fas fa-university"></i> Patrimônio</a></li>
+
+                      <li><a href="#" target="_self"><i class="fas fa-people-arrows"></i> Coordenação Pedagógica</a></li>
+
+                  </ul>
+              </li>
+          </ul>
+
+            
+        </nav>
+
+        <div class="mobilemenu" onclick="abrirNav()">
+          <img src="img/menu_bars (2).jpg" alt=""> MENU
+        </div>  
+
+        <div class="main1">
+          <main>
+            <img src="img/BannerSenai3.jpg" />
+          </main>
+        </div>
+
+        <main>
+
+          <div class="main2">
+
+            <br>        
+
+          <p id="title_m">Visitas previamente marcadas<span style="position: relative; left: 700px; font-size: 20px;"> </span></p>
+
+          <br>  
+          <br>  
+          <br>  
+
+
+
+          <div class="container">
+
+            <div class="destino">
+                <img src="data:image/jpeg;base64,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">
+                <a href="https://taubate.sp.senai.br/curso/85566/301/tecnico-de-desenvolvimento-de-sistemas">Paulo Skaff</a><br>
+                <p>Dia 22 de Novembro de 2021 - Às 13h</p>
+            </div>
+                
+           
+
+          </div>
+
+
+
+
+
+
+          <p id="title_a">ATENTAR-SE</p>
+
+          <div class="recados">
+            
+        
+
+            <div class="post">
+              <p>Lorem ipsum</p> <!-- TÍTULO DO RECADO -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non nulla quis tortor eleifend mollis. Fusce nisi elit, bibendum quis fringilla vel, ultrices ut ligula. Nulla ut convallis lectus, sit amet lacinia orci. Morbi hendrerit justo arcu, quis pretium tellus tristique pellentesque. Maecenas non nibh ipsum. Duis pretium nunc pulvinar nunc feugiat porttitor. Sed consectetur ligula at sodales tristique. Vivamus malesuada bibendum tristique. Donec luctus ut sapien non consequat. Donec interdum sed orci vitae fermentum. Pellentesque vestibulum mi id nibh vehicula tempus. Phasellus sodales maximus neque eu dictum. Fusce vestibulum malesuada pharetra. In hac habitasse platea dictumst. Cras tristique metus non magna ultrices convallis. Aliquam imperdiet id velit gravida commodo. Aenean lacus mauris, mollis at urna in, efficitur aliquam urna. Duis congue pharetra elit sed pellentesque. Maecenas nec neque ac nulla pulvinar vulputate non vel nunc. Donec sit amet tempor eros.</p> <!-- CONTEÚDO -->
+            </div>
+
+          </div>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <br>  
+          <br>  
+          <br>  
+
+          <p id="title_a"></p>
+          <br>  
+          <br>  
+           
+          
+       
+
+
+
+
+        
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+
+
+
+
+       
+
+
+
+        
+
+          
+
+         
+
+         </div>
+
+        </main>
+
+	      <script type="text/javascript">
+
+        function abrirNav(){
+            document.getElementById("n0").style.width="20%";
+        }
+
+        function fecharNav(){
+            document.getElementById("n0").style.width="0px";
+        }
+
+        </script>
+
+        <script type="text/javascript" src="java/script.js"></script>
+    </body>
+
+</html>
