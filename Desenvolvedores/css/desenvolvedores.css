@@ -1,0 +1,19 @@
+#dev{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+#td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+table{
+    padding-top: 100px;
+}
+
+<li><a href="desenvolvedores.html"><i class="fas fa-code"></i> Desenvolvedores <i id="arrow" class="fas fa-caret-right"></i></a></li>
