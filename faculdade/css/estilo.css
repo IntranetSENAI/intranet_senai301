@@ -663,9 +663,9 @@ element.style {
   }
   
   
-  .active, .accordion:hover {
+  //*.active, .accordion:hover {
     background-color: #ccc;
-  }
+  }*//
   
   
   .panel {
@@ -734,8 +734,10 @@ p{
     font-size: 20px;
 }
 
-a:hover{
+#documentação:hover{
     color: blue;
     font-size: 25px;
 }
+
+
  /*  <!--Parte do grupinho da pos e draduação    -->*/
